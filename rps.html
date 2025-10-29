@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="why">Why does a chicken have access to a computer? How does it even know how to use it? Why am I asking you... Anyways</h1>
+    <br>
+    <img id="chicken" src="end/chicken.jpg">
+    <br>
+    <br>
+    <br>
+    The computer boots  up and you're playing as a hero of some kind
+    <br>
+    Oh, theres an enemy too
+    <br>
+    kill him with the power of rock paper scissors
+    <br>
+    When you're done, just make sure you turn it off. Wouldnt wanna waste power from a source you dont pay for
+    <br>
+    <br>
+    <a href="end/end.html">Go do someting else.</a> rock paper scissors is only intersting for so long anyways</a>
+    <br>
+    (for now just use inspect to see it)
+    <script>
+
+        let herochoice = null;
+        let heronumber = Math.random();
+
+       if (heronumber < .33) {
+        herochoice = "scissors"
+       } else if (heronumber < .66) {
+        herochoice = "paper"
+       } else {
+        herochoice = "rock"
+        
+       }
+
+       console.log(herochoice);
+
+       let enemychoice = null;
+        let enemynumber = Math.random();
+
+       if (enemynumber < .33) {
+        enemychoice = "scissors"
+       } else if (heronumber < .66) {
+        enemychoice = "paper"
+       } else {
+        enemychoice = "rock"
+        
+       }
+
+       console.log(enemychoice);
+
+        //variables
+        // let herochoice = "rock";
+        // let enemychoice = "scissors";
+        let winner = "no one!";
+
+
+
+        if (herochoice == "rock" && enemychoice == "scissors") {
+            winner = "hero";
+        } else if (herochoice == "scissors" && enemychoice == "paper") {
+            winner = "hero"
+        } else if (herochoice == enemychoice) {
+            winner = "no one"
+        } else {
+            winner = "enemy";
+
+        }
+
+        console.log("hero chose " + herochoice);
+        console.log("enemy chose " + enemychoice);
+        console.log("winner was " + winner);
+
+        
+
+
+    </script>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+</html>
